@@ -29,11 +29,12 @@ Production AI since Amazon's deep learning days · CTO who tripled a consumer bu
 
 ## Open Source Track Record
 
-Most of my open-source work happened inside Amazon, on the frameworks and infrastructure that shipped deep learning to AWS customers.
+Most of my open-source work happened inside Amazon, on the frameworks and infrastructure that shipped deep learning to AWS customers. Now I contribute upstream to Google's Agent Development Kit, the framework Kodama's agent runs on.
 
 | Project | What I did |
 | :--- | :--- |
-| **[Apache MXNet](https://github.com/search?q=repo%3Aapache%2Fmxnet+author%3Alebeg+is%3Amerged&type=pullrequests)** <br><sub>48 merged PRs</sub> | Release work for v1.3.1, ARM and Raspberry Pi builds (armv6/7/8, OpenMP, hard-float ABI), faster Windows CI and the CI reliability work behind the cost cut. |
+| **[Google Agent Development Kit](https://github.com/search?q=is%3Apr+author%3Alebeg+repo%3Agoogle%2Fadk-go+repo%3Agoogle%2Fadk-python&type=pullrequests)** <br><sub>1 merged PR · 2 in review</sub> | **ADK Go:** [`exp/fallbackmodel`](https://github.com/google/adk-go/pull/2553), a port of adk-python's `FallbackModel`. When a model fails with a rate limit or a server error, the agent's turn moves on to the next model instead of failing. **ADK Python, in review:** [reasoning tokens counted once](https://github.com/google/adk-python/pull/8413) for OpenAI models, and [a switch to turn off Claude's reasoning summaries](https://github.com/google/adk-python/pull/8379). |
+| **[Apache MXNet](https://github.com/search?q=repo%3Aapache%2Fmxnet+author%3Alebeg+is%3Amerged&type=pullrequests)** <br><sub>58 merged PRs</sub> | Release work for v1.3.1, ARM and Raspberry Pi builds (armv6/7/8, OpenMP, hard-float ABI), faster Windows CI and the CI reliability work behind the cost cut. |
 | **[Benchmark AI (Anubis)](https://github.com/search?q=repo%3Aawslabs%2Fbenchmark-ai+author%3Alebeg+is%3Amerged&type=pullrequests)** <br><sub>22 merged PRs</sub> | Kubernetes-native benchmarking of ML workloads: metrics extraction, MLPerf samples, Grafana and Helm setup. |
 | **[dockcross](https://github.com/search?q=repo%3Adockcross%2Fdockcross+author%3Alebeg+is%3Amerged&type=pullrequests)** | OpenMP for ARM and MIPS cross-compilers, a pinned armv7 hard-float ABI, Fortran support. |
 | **[dmlc mshadow · ps-lite](https://github.com/search?q=author%3Alebeg+is%3Amerged+org%3Admlc&type=pullrequests)** | Small fixes to the tensor and parameter-server libraries under MXNet. |
@@ -48,7 +49,7 @@ Most of my open-source work happened inside Amazon, on the frameworks and infras
 
 </div>
 
-**AI & Agents:** `LLM agents` · `Agent memory` · `RAG` · `Hybrid retrieval` · `Agent evaluation` · `Voice` · `Deep learning frameworks` · `Edge AI`
+**AI & Agents:** `LLM agents` · `Google ADK` · `Agent memory` · `RAG` · `Hybrid retrieval` · `Agent evaluation` · `Voice` · `Deep learning frameworks` · `Edge AI`
 
 **Platforms & Infrastructure:** `Kubernetes` · `MLOps` · `CI/CD at scale` · `AWS` · `GCP` · `Cloud-agnostic ML` · `Terraform` · `Cross-compilation`
 
